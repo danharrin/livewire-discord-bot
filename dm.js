@@ -13,7 +13,7 @@ module.exports = async (msg) => {
 
         msg.channel.send('Thanks for contacting the Livewire staff team! Your message has been received, please await a response.');
 
-        threadChannel.send(`<@&${process.env.STAFF_ROLE_ID}>`);
+        threadChannel.send(`@here`);
 
         logsChannel.send({
             embed: {

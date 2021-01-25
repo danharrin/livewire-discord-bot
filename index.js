@@ -32,10 +32,10 @@ client.on('message', async msg => {
 });
 
 client.login(process.env.TOKEN).then(() => {
-    // client.user.setPresence({
-    //     'activity': {
-    //         'name': 'DM to contact admins',
-    //         'type': 'WATCHING',
-    //     },
-    // });
+    client.user.setPresence({
+        'activity': {
+            'name': 'DM to contact admins',
+            'type': 'WATCHING',
+        },
+    });
 });
