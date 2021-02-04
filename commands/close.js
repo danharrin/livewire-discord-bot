@@ -1,6 +1,8 @@
 module.exports = async (args, msg) => {
     const member = await msg.guild.members.resolve(msg.channel.topic);
 
+    if (! member) return;
+
     msg.channel.delete();
 
     const logsChannel = msg.guild.channels.resolve(process.env.MAIL_LOGS_CHANNEL_ID);
